@@ -1,4 +1,55 @@
 """
+An AVL Tree is a self-balancing Binary Search Tree (BST) named after its inventors, Adelson-Velsky and Landis. 
+It ensures that the height difference (or balance factor) between the left and right subtrees of any node is at most 1, 
+maintaining efficient operations like search, insertion, and deletion.
+
+Key Properties:
+Balance Factor:
+
+For every node, the balance factor is the height of the left subtree minus the height of the right subtree.
+Balance Factor =
+Height(left)
+
+Height(right)
+Balance Factor=Height(left)−Height(right)
+Must always be 
+−
+1
+≤
+Balance Factor
+≤
+1
+−1≤Balance Factor≤1.
+Height Balance:
+
+This balancing ensures that the tree does not degenerate into a linked list, providing 
+𝑂
+(
+log
+⁡
+𝑛
+)
+O(logn) time complexity for search, insertion, and deletion.
+Rotations:
+
+To maintain balance, AVL trees perform rotations during insertion and deletion:
+Left Rotation (LL imbalance).
+Right Rotation (RR imbalance).
+Left-Right Rotation (LR imbalance).
+Right-Left Rotation (RL imbalance).
+Advantages:
+Fast Operations:
+
+Balanced height ensures logarithmic time complexity.
+Ideal for scenarios where frequent insertions and deletions occur.
+Consistent Performance:
+
+Always maintains balance, unlike an ordinary BST, which may become skewed.
+
+
+
+
+
 
 
 """
